@@ -5,6 +5,6 @@ python:
 # command to run tests
 script: 
   - cd bin
-  - ./main.py -i ../inp/input.dat
+  - python main.py -i ../inp/input.dat
   - cd result
   - ls -al
