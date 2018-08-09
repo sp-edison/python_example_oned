@@ -37,10 +37,10 @@ d 0.3
 zip 파일을 다운로드 받아 압축을 풀거나 ```git clone``` 명령어를 이용하여, 프로젝트를 가져올 수 있습니다.
 
 ```
-$ git clone https://github.com/sp-edison/python_example_onedplot.git
+$ git clone https://github.com/sp-edison/python_example_oned.git
 ```
 
-다운로드가 완료되면, ```python_example_onedplot``` 폴더가 생성되며, **bin** 폴더로 이동해  아래와 같이 명령어를 입력하면 실행이 됩니다.
+다운로드가 완료되면, ```python_example_oned``` 폴더가 생성되며, **bin** 폴더로 이동해  아래와 같이 명령어를 입력하면 실행이 됩니다.
 
 ```
 $ cd ../bin

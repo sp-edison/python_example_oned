@@ -16,16 +16,16 @@ except getopt.GetoptError as err:
 
 for opt, arg in otps:
     if opt in "-i":
-        f_inputdeck = open(arg, "r")
+        f_sde = open(arg, "r")
 
-print("input file = " + f_inputdeck.name)
-inputdeck_lines = f_inputdeck.readlines()
+print("input file = " + f_sde.name)
+sde_lines = f_sde.readlines()
 
-for line in inputdeck_lines:
+for line in sde_lines:
     opt = line.split()[0]
     if opt in "a":
         a = float(line.split()[1])
-        print("init1 : " + str(a))
+        print("a : " + str(a))
     elif opt in "b":
         b = float(line.split()[1])
         print("b : " + str(b))
@@ -36,10 +36,10 @@ for line in inputdeck_lines:
         d = float(line.split()[1])
         print("d : " + str(d))
     else:
-        print("Inputdeck value read error. your input key is " + str(opt))
+        print("SDE value read error. your input key is " + str(opt))
         sys.exit(1)
 
-f_inputdeck.close()
+f_sde.close()
 
 os.system("rm -rf result")
 os.system("mkdir result")
